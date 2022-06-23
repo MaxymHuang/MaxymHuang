@@ -3,6 +3,7 @@
 - 🌱 I’m currently learning data structure with python
 - 💞️ I’m looking to collaborate on some machine learning projects
 - 📫 reach me on LinkedIn
+- my LinkedIn profile is -- https://www.linkedin.com/in/maxymhuang/
 
 <!---
 MaxymHuang/MaxymHuang is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
