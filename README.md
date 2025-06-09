@@ -5,5 +5,5 @@
 - 👯 I’m looking to collaborate on 
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
-- 📫 Reach me at: [Linkedin](linkedin.com/in/maxymhuang)
+- 📫 Reach me at: [Linkedin](https://www.linkedin.com/in/maxymhuang)
 - ⚡ Fun fact: I use arch btw
