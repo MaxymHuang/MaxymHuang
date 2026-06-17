@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" role="img" aria-label="maxym@archbox terminal: whoami — web builder, ai tinkerer, homelab enthusiast">
+  <!-- archbox terminal hero. Monospace falls back to the viewer's system mono;
+       external web fonts don't load reliably in <img>-embedded SVG. -->
+  <defs>
+    <style>
+      :root{
+        --bg:#060a06; --panel:#0b110b; --border:#13351f;
+        --green:#3df58a; --dim:#5c7a63; --arch:#1793d1;
+        --amber:#ffb454; --magenta:#ff5d8f; --fg:#cdeccd;
+      }
+      text{ font-family:ui-monospace,"JetBrains Mono","SF Mono",Menlo,Consolas,monospace; }
+      .pmt{ fill:var(--green); }   .at{ fill:var(--dim); }
+      .host{ fill:var(--arch); }   .tld{ fill:var(--amber); }
+      .cmd{ fill:var(--fg); font-weight:600; }
+      .out{ fill:var(--green); }   .dim{ fill:var(--dim); }
+      .acc{ fill:var(--arch); }    .amb{ fill:var(--amber); }
+    </style>
+
+    <radialGradient id="vig" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#0c160c"/>
+      <stop offset="70%" stop-color="#070d07"/>
+      <stop offset="100%" stop-color="#020402"/>
+    </radialGradient>
+
+    <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="3" fill="none"/>
+      <rect width="3" height="1" fill="#000000" opacity="0.35"/>
+    </pattern>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.1" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#102310"/>
+      <stop offset="100%" stop-color="#0a160a"/>
+    </linearGradient>
+
+    <!-- typing clips: a rect grows in width to reveal each line L->R -->
+    <clipPath id="c1"><rect x="34" y="74"  width="0" height="26"><animate attributeName="width" dur="15s" repeatCount="indefinite" values="0;0;840;840;0" keyTimes="0;0.027;0.093;0.973;1"/></rect></clipPath>
+    <clipPath id="c2"><rect x="34" y="104" width="0" height="26"><animate attributeName="width" dur="15s" repeatCount="indefinite" values="0;0;840;840;0" keyTimes="0;0.140;0.206;0.973;1"/></rect></clipPath>
+    <clipPath id="c3"><rect x="34" y="134" width="0" height="26"><animate attributeName="width" dur="15s" repeatCount="indefinite" values="0;0;840;840;0" keyTimes="0;0.253;0.320;0.973;1"/></rect></clipPath>
+    <clipPath id="c4"><rect x="34" y="164" width="0" height="26"><animate attributeName="width" dur="15s" repeatCount="indefinite" values="0;0;840;840;0" keyTimes="0;0.367;0.433;0.973;1"/></rect></clipPath>
+    <clipPath id="c5"><rect x="34" y="194" width="0" height="26"><animate attributeName="width" dur="15s" repeatCount="indefinite" values="0;0;840;840;0" keyTimes="0;0.480;0.547;0.973;1"/></rect></clipPath>
+    <clipPath id="c6"><rect x="34" y="224" width="0" height="26"><animate attributeName="width" dur="15s" repeatCount="indefinite" values="0;0;840;840;0" keyTimes="0;0.593;0.660;0.973;1"/></rect></clipPath>
+    <clipPath id="c7"><rect x="34" y="254" width="0" height="26"><animate attributeName="width" dur="15s" repeatCount="indefinite" values="0;0;420;420;0" keyTimes="0;0.707;0.760;0.973;1"/></rect></clipPath>
+  </defs>
+
+  <!-- frame -->
+  <rect x="6" y="6" width="888" height="308" rx="12" fill="url(#vig)" stroke="var(--border)" stroke-width="1.5"/>
+  <rect x="6" y="6" width="888" height="308" rx="12" fill="none" stroke="var(--green)" stroke-width="1" opacity="0.18"/>
+
+  <!-- title bar -->
+  <path d="M6 18 q0 -12 12 -12 h864 q12 0 12 12 v28 h-888 z" fill="url(#bar)" stroke="var(--border)" stroke-width="1"/>
+  <circle cx="28" cy="26" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="26" r="6" fill="#ffbd2e"/>
+  <circle cx="68" cy="26" r="6" fill="#27c93f"/>
+  <text x="450" y="31" text-anchor="middle" font-size="13" class="dim">maxym@archbox: ~/profile</text>
+  <text x="868" y="31" text-anchor="end" font-size="13" class="acc">●</text>
+
+  <!-- terminal body -->
+  <g filter="url(#glow)" font-size="17">
+    <g clip-path="url(#c1)">
+      <text x="34" y="92"><tspan class="pmt">maxym</tspan><tspan class="at">@</tspan><tspan class="host">archbox</tspan><tspan class="at">:</tspan><tspan class="tld">~</tspan><tspan class="at">$</tspan><tspan class="cmd"> whoami</tspan></text>
+    </g>
+    <g clip-path="url(#c2)">
+      <text x="34" y="122"><tspan class="out">web builder</tspan><tspan class="dim"> · </tspan><tspan class="acc">ai tinkerer</tspan><tspan class="dim"> · </tspan><tspan class="amb">homelab enthusiast</tspan></text>
+    </g>
+    <g clip-path="url(#c3)">
+      <text x="34" y="152"><tspan class="pmt">maxym</tspan><tspan class="at">@</tspan><tspan class="host">archbox</tspan><tspan class="at">:</tspan><tspan class="tld">~</tspan><tspan class="at">$</tspan><tspan class="cmd"> cat ./status</tspan></text>
+    </g>
+    <g clip-path="url(#c4)">
+      <text x="34" y="182"><tspan class="acc">●</tspan><tspan class="out"> personal website </tspan><tspan class="dim">+</tspan><tspan class="out"> private cloud </tspan><tspan class="dim">—</tspan><tspan class="amb"> online</tspan></text>
+    </g>
+    <g clip-path="url(#c5)">
+      <text x="34" y="212"><tspan class="acc">●</tspan><tspan class="out"> RAG agents deployed </tspan><tspan class="dim">·</tspan><tspan class="out"> smart home automated</tspan></text>
+    </g>
+    <g clip-path="url(#c6)">
+      <text x="34" y="242"><tspan class="acc">●</tspan><tspan class="out"> shipping projects @ 2AM </tspan><tspan class="dim">with</tspan><tspan class="out"> good music</tspan></text>
+    </g>
+    <g clip-path="url(#c7)">
+      <text x="34" y="272"><tspan class="pmt">maxym</tspan><tspan class="at">@</tspan><tspan class="host">archbox</tspan><tspan class="at">:</tspan><tspan class="tld">~</tspan><tspan class="at">$</tspan></text>
+    </g>
+    <!-- live cursor -->
+    <rect x="201" y="258" width="11" height="18" fill="var(--green)">
+      <animate attributeName="opacity" dur="1.06s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.5;0.5;1"/>
+    </rect>
+  </g>
+
+  <!-- CRT overlays -->
+  <rect x="6" y="6" width="888" height="308" rx="12" fill="url(#scan)" opacity="0.5" pointer-events="none"/>
+  <rect x="6" y="6" width="888" height="308" rx="12" fill="#7dffb0" opacity="0" pointer-events="none">
+    <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values="0;0.015;0;0.03;0;0.01;0" keyTimes="0;0.2;0.35;0.55;0.7;0.85;1"/>
+  </rect>
+</svg>

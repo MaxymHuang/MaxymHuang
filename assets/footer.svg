@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="900" height="130" role="img" aria-label="logout — connection to archbox closed">
+  <defs>
+    <style>
+      text{ font-family:ui-monospace,"JetBrains Mono","SF Mono",Menlo,Consolas,monospace; }
+      .pmt{ fill:#3df58a; } .at{ fill:#5c7a63; } .host{ fill:#1793d1; }
+      .tld{ fill:#ffb454; } .cmd{ fill:#cdeccd; font-weight:600; } .dim{ fill:#5c7a63; }
+    </style>
+    <radialGradient id="fvig" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#0b120b"/><stop offset="100%" stop-color="#040704"/>
+    </radialGradient>
+    <pattern id="fscan" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" opacity="0.3"/></pattern>
+    <filter id="fglow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="fc1"><rect x="40" y="34" width="0" height="24"><animate attributeName="width" dur="8s" repeatCount="indefinite" values="0;0;360;360;0" keyTimes="0;0.05;0.25;0.95;1"/></rect></clipPath>
+    <clipPath id="fc2"><rect x="40" y="66" width="0" height="24"><animate attributeName="width" dur="8s" repeatCount="indefinite" values="0;0;520;520;0" keyTimes="0;0.32;0.52;0.95;1"/></rect></clipPath>
+  </defs>
+
+  <rect x="6" y="6" width="888" height="118" rx="12" fill="url(#fvig)" stroke="#13351f" stroke-width="1.5"/>
+  <rect x="6" y="6" width="888" height="118" rx="12" fill="none" stroke="#3df58a" stroke-width="1" opacity="0.14"/>
+
+  <g font-size="16" filter="url(#fglow)">
+    <g clip-path="url(#fc1)">
+      <text x="40" y="52"><tspan class="pmt">maxym</tspan><tspan class="at">@</tspan><tspan class="host">archbox</tspan><tspan class="at">:</tspan><tspan class="tld">~</tspan><tspan class="at">$</tspan><tspan class="cmd"> logout</tspan></text>
+    </g>
+    <g clip-path="url(#fc2)">
+      <text x="40" y="84" class="dim">Connection to <tspan class="host">archbox</tspan> closed. <tspan fill="#3df58a">thanks for visiting ♥</tspan></text>
+    </g>
+    <rect x="258" y="38" width="10" height="17" fill="#3df58a">
+      <animate attributeName="opacity" dur="1.06s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.5;0.5;1"/>
+    </rect>
+  </g>
+
+  <rect x="6" y="6" width="888" height="118" rx="12" fill="url(#fscan)" opacity="0.5" pointer-events="none"/>
+</svg>

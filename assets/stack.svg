@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" aria-label="pacman -S devstack — tech stack install">
+  <defs>
+    <style>
+      text{ font-family:ui-monospace,"JetBrains Mono","SF Mono",Menlo,Consolas,monospace; }
+      .pmt{ fill:#3df58a; } .at{ fill:#5c7a63; } .host{ fill:#1793d1; }
+      .tld{ fill:#ffb454; } .cmd{ fill:#cdeccd; font-weight:600; }
+      .dim{ fill:#5c7a63; } .grn{ fill:#3df58a; } .amb{ fill:#ffb454; }
+      .chip{ fill:#cdeccd; font-size:14px; }
+    </style>
+    <radialGradient id="svig" cx="50%" cy="36%" r="80%">
+      <stop offset="0%" stop-color="#0c160c"/><stop offset="72%" stop-color="#070d07"/><stop offset="100%" stop-color="#020402"/>
+    </radialGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1793d1"/><stop offset="100%" stop-color="#3df58a"/>
+    </linearGradient>
+    <pattern id="sscan" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" opacity="0.32"/></pattern>
+    <filter id="sglow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="barclip"><rect x="40" y="356" width="820" height="20" rx="10"/></clipPath>
+  </defs>
+
+  <rect x="6" y="6" width="888" height="408" rx="12" fill="url(#svig)" stroke="#13351f" stroke-width="1.5"/>
+  <rect x="6" y="6" width="888" height="408" rx="12" fill="none" stroke="#3df58a" stroke-width="1" opacity="0.16"/>
+
+  <g font-size="16" filter="url(#sglow)">
+    <text x="40" y="48"><tspan class="pmt">maxym</tspan><tspan class="at">@</tspan><tspan class="host">archbox</tspan><tspan class="at">:</tspan><tspan class="tld">~</tspan><tspan class="at">$</tspan><tspan class="cmd"> sudo pacman -S maxym/devstack</tspan></text>
+    <text x="40" y="76" class="dim">:: resolving dependencies... <tspan class="grn">done</tspan></text>
+    <text x="40" y="100" class="dim">:: packages (16) — proceed? [<tspan class="grn">Y</tspan>/n] <tspan class="grn">y</tspan></text>
+  </g>
+
+  <!-- package chips -->
+  <g font-size="14" filter="url(#sglow)">
+    <!-- row 1 -->
+    <g opacity="0"><animate attributeName="opacity" begin="0.6s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="40"  y="124" width="190" height="34" rx="8" fill="#0d160d" stroke="#5ec8ff" stroke-width="1.2"/><text x="58" y="146" class="chip">▸ react</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="0.72s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="245" y="124" width="190" height="34" rx="8" fill="#0d160d" stroke="#1793d1" stroke-width="1.2"/><text x="263" y="146" class="chip">▸ typescript</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="0.84s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="450" y="124" width="190" height="34" rx="8" fill="#0d160d" stroke="#5ec8ff" stroke-width="1.2"/><text x="468" y="146" class="chip">▸ tailwind</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="0.96s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="655" y="124" width="205" height="34" rx="8" fill="#0d160d" stroke="#cdeccd" stroke-width="1.2"/><text x="673" y="146" class="chip">▸ next.js</text></g>
+    <!-- row 2 -->
+    <g opacity="0"><animate attributeName="opacity" begin="1.08s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="40"  y="166" width="190" height="34" rx="8" fill="#0d160d" stroke="#3df58a" stroke-width="1.2"/><text x="58" y="188" class="chip">▸ node.js</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.2s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="245" y="166" width="190" height="34" rx="8" fill="#0d160d" stroke="#ffb454" stroke-width="1.2"/><text x="263" y="188" class="chip">▸ python</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.32s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="450" y="166" width="190" height="34" rx="8" fill="#0d160d" stroke="#3df58a" stroke-width="1.2"/><text x="468" y="188" class="chip">▸ fastapi</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.44s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="655" y="166" width="205" height="34" rx="8" fill="#0d160d" stroke="#5ec8ff" stroke-width="1.2"/><text x="673" y="188" class="chip">▸ docker</text></g>
+    <!-- row 3 -->
+    <g opacity="0"><animate attributeName="opacity" begin="1.56s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="40"  y="208" width="190" height="34" rx="8" fill="#0d160d" stroke="#ffb454" stroke-width="1.2"/><text x="58" y="230" class="chip">▸ linux</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.68s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="245" y="208" width="190" height="34" rx="8" fill="#0d160d" stroke="#5ec8ff" stroke-width="1.2"/><text x="263" y="230" class="chip">▸ postgres</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.8s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="450" y="208" width="190" height="34" rx="8" fill="#0d160d" stroke="#ff5d8f" stroke-width="1.2"/><text x="468" y="230" class="chip">▸ redis</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.92s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="655" y="208" width="205" height="34" rx="8" fill="#0d160d" stroke="#ffb454" stroke-width="1.2"/><text x="673" y="230" class="chip">▸ git</text></g>
+    <!-- row 4 -->
+    <g opacity="0"><animate attributeName="opacity" begin="2.04s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="40"  y="250" width="190" height="34" rx="8" fill="#0d160d" stroke="#ffb454" stroke-width="1.2"/><text x="58" y="272" class="chip">▸ cloudflare</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="2.16s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="245" y="250" width="190" height="34" rx="8" fill="#0d160d" stroke="#cdeccd" stroke-width="1.2"/><text x="263" y="272" class="chip">▸ vercel</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="2.28s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="450" y="250" width="190" height="34" rx="8" fill="#0d160d" stroke="#3df58a" stroke-width="1.2"/><text x="468" y="272" class="chip">▸ bash</text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="2.4s" dur="0.4s" fill="freeze" values="0;1"/>
+      <rect x="655" y="250" width="205" height="34" rx="8" fill="#0d160d" stroke="#3df58a" stroke-width="1.2"/><text x="673" y="272" class="chip">▸ nginx</text></g>
+  </g>
+
+  <!-- progress bar -->
+  <g font-size="15" filter="url(#sglow)">
+    <text x="40" y="330"><tspan class="dim">(16/16) installing </tspan><tspan class="grn">maxym/devstack</tspan></text>
+    <rect x="40" y="356" width="820" height="20" rx="10" fill="#0a140a" stroke="#13351f" stroke-width="1"/>
+    <g clip-path="url(#barclip)">
+      <rect x="40" y="356" width="0" height="20" fill="url(#fill)">
+        <animate attributeName="width" begin="2.5s" dur="1.8s" fill="freeze" values="0;820"/>
+      </rect>
+    </g>
+    <text x="868" y="400" text-anchor="end" opacity="0"><animate attributeName="opacity" begin="4.3s" dur="0.4s" fill="freeze" values="0;1"/><tspan class="grn" font-weight="700">100% </tspan><tspan class="amb">✓ devstack ready · always up to date</tspan></text>
+  </g>
+
+  <rect x="6" y="6" width="888" height="408" rx="12" fill="url(#sscan)" opacity="0.5" pointer-events="none"/>
+</svg>

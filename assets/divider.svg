@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 40" width="900" height="40" role="img" aria-label="section divider">
+  <defs>
+    <linearGradient id="dline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#13351f" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#3df58a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#13351f" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dglint" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#aef7cf"/>
+      <stop offset="60%" stop-color="#3df58a"/>
+      <stop offset="100%" stop-color="#3df58a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <line x1="40" y1="20" x2="860" y2="20" stroke="url(#dline)" stroke-width="1.4"/>
+  <text x="450" y="25" text-anchor="middle" font-family="ui-monospace,'JetBrains Mono',Menlo,Consolas,monospace" font-size="13" fill="#5c7a63">// &#8212;&#8212;&#8212;&#8212; &#9670; &#8212;&#8212;&#8212;&#8212; //</text>
+  <circle r="3.5" cy="20" fill="url(#dglint)">
+    <animate attributeName="cx" dur="6s" repeatCount="indefinite" values="40;860;40" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    <animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;1;1;0;0;1;1;0" keyTimes="0;0.05;0.45;0.5;0.5;0.55;0.95;1"/>
+  </circle>
+</svg>

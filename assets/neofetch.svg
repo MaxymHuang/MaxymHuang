@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" role="img" aria-label="neofetch — maxym@archbox system info">
+  <defs>
+    <style>
+      text{ font-family:ui-monospace,"JetBrains Mono","SF Mono",Menlo,Consolas,monospace; }
+      .key{ fill:#1793d1; font-weight:600; }
+      .val{ fill:#cdeccd; }
+      .grn{ fill:#3df58a; }
+      .dim{ fill:#5c7a63; }
+      .amb{ fill:#ffb454; }
+    </style>
+    <radialGradient id="nvig" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#0c160c"/>
+      <stop offset="72%" stop-color="#070d07"/>
+      <stop offset="100%" stop-color="#020402"/>
+    </radialGradient>
+    <linearGradient id="archg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5ec8ff"/>
+      <stop offset="55%" stop-color="#1793d1"/>
+      <stop offset="100%" stop-color="#0c5e8a"/>
+    </linearGradient>
+    <pattern id="nscan" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="#000000" opacity="0.32"/>
+    </pattern>
+    <filter id="nglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="archglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <rect x="6" y="6" width="888" height="368" rx="12" fill="url(#nvig)" stroke="#13351f" stroke-width="1.5"/>
+  <rect x="6" y="6" width="888" height="368" rx="12" fill="none" stroke="#3df58a" stroke-width="1" opacity="0.16"/>
+
+  <!-- Arch logo (stylized) -->
+  <g transform="translate(60,50)">
+    <path d="M150 10 L150 10 L250 300 L196 300 L150 196 L104 300 L50 300 Z" fill="url(#archg)" filter="url(#archglow)" opacity="0.55"/>
+    <path d="M150 10 L250 300 L196 300 L150 196 L104 300 L50 300 Z" fill="url(#archg)"/>
+    <path d="M150 70 L150 70 L210 245 L172 245 L150 178 L128 245 L90 245 Z" fill="#020402" opacity="0.35"/>
+    <path d="M150 10 L250 300 L196 300 L150 196 L104 300 L50 300 Z" fill="none" stroke="#aee6ff" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- info table -->
+  <g font-size="17" filter="url(#nglow)" transform="translate(380,0)">
+    <g>
+      <text x="0" y="58"><tspan class="grn" font-weight="700">maxym</tspan><tspan class="dim">@</tspan><tspan class="key">archbox</tspan></text>
+      <rect x="0" y="68" width="0" height="2" fill="#5c7a63"><animate attributeName="width" begin="0.2s" dur="0.6s" fill="freeze" values="0;230"/></rect>
+      <animate attributeName="opacity" begin="0s" dur="0.5s" fill="freeze" values="0;1"/>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" begin="0.5s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="104"><tspan class="key">os</tspan><tspan class="dim">      ~  </tspan><tspan class="val">Arch Linux </tspan><tspan class="amb">btw</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="0.7s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="132"><tspan class="key">host</tspan><tspan class="dim">    ~  </tspan><tspan class="val">homelab · self-hosted cloud</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="0.9s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="160"><tspan class="key">shell</tspan><tspan class="dim">   ~  </tspan><tspan class="val">zsh + tmux</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.1s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="188"><tspan class="key">editor</tspan><tspan class="dim">  ~  </tspan><tspan class="val">nvim</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.3s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="216"><tspan class="key">wm</tspan><tspan class="dim">      ~  </tspan><tspan class="val">hyprland</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.5s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="244"><tspan class="key">stack</tspan><tspan class="dim">   ~  </tspan><tspan class="val">react · python · docker</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.7s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="272"><tspan class="key">focus</tspan><tspan class="dim">   ~  </tspan><tspan class="val">RAG agents · automations</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="1.9s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="300"><tspan class="key">uptime</tspan><tspan class="dim">  ~  </tspan><tspan class="grn">always building</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" begin="2.1s"  dur="0.45s" fill="freeze" values="0;1"/>
+      <text x="0" y="328"><tspan class="key">mode</tspan><tspan class="dim">    ~  </tspan><tspan class="amb">full vibe-coding</tspan></text></g>
+
+    <!-- palette dots -->
+    <g opacity="0"><animate attributeName="opacity" begin="2.3s" dur="0.5s" fill="freeze" values="0;1"/>
+      <rect x="0"   y="350" width="22" height="14" rx="2" fill="#3df58a"/>
+      <rect x="28"  y="350" width="22" height="14" rx="2" fill="#1793d1"/>
+      <rect x="56"  y="350" width="22" height="14" rx="2" fill="#ffb454"/>
+      <rect x="84"  y="350" width="22" height="14" rx="2" fill="#ff5d8f"/>
+      <rect x="112" y="350" width="22" height="14" rx="2" fill="#cdeccd"/>
+      <rect x="140" y="350" width="22" height="14" rx="2" fill="#5c7a63"/>
+    </g>
+  </g>
+
+  <rect x="6" y="6" width="888" height="368" rx="12" fill="url(#nscan)" opacity="0.5" pointer-events="none"/>
+</svg>
